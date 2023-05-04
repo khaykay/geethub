@@ -1,0 +1,50 @@
+.profile_wrapper {
+  width: 26%;
+  /* background-color: gray; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 40px;
+}
+.avi {
+  height: 42%;
+  width: 80%;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1;
+}
+.full_name {
+  font-size: xx-large;
+  font-weight: bold;
+}
+.user_name {
+  font-size: large;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #21262d;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.follow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.follow > .material-symbols-outlined {
+  font-size: 20px;
+}
+.follower {
+  border-right: 1px solid #ddd;
+  padding-right: 5px;
+}
