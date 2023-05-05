@@ -4,13 +4,13 @@ import "../styles/Home.css";
 import Main from "./Main";
 import Profile from "./Profile";
 
-const Home = () => {
+const Home = ({ data }) => {
   return (
     <>
       <div className="home_wrapper">
         <Navbar />
         <Main />
-        <Profile />
+        <Profile data={data} />
       </div>
     </>
   );

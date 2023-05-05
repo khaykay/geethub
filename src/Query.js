@@ -1,20 +1,40 @@
 import { gql } from "@apollo/client";
 
 export const GET_REPOSITORY = gql`
-  query getRepository($username: String!, $repository: String!) {
-    repository(name: $repository, owner: $username) {
-      isFork
-      isTemplate
-      isArchived
-      url
-      forks {
+  query getRepository($username: String!) {
+    user(login: $username) {
+      login
+      avatarUrl
+      followers {
         totalCount
       }
-      stargazers {
+      following {
         totalCount
       }
       name
-      description
+      repositories(first: 10) {
+        totalCount
+        edges {
+          node {
+            id
+            name
+            url
+            updatedAt
+          }
+        }
+      }
+      pinnedItems(first: 3) {
+        edges {
+          node {
+            ... on Repository {
+              id
+              name
+              url
+            }
+          }
+        }
+        totalCount
+      }
     }
   }
 `;

@@ -10,8 +10,11 @@
 .avi {
   height: 42%;
   width: 80%;
+}
+.avi_img {
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
-  border: 1px solid #eee;
 }
 .name {
   display: flex;
