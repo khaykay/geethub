@@ -9,7 +9,7 @@ const Home = ({ data }) => {
     <>
       <div className="home_wrapper">
         <Navbar />
-        <Main />
+        <Main data={data} />
         <Profile data={data} />
       </div>
     </>

@@ -30,6 +30,14 @@ export const GET_REPOSITORY = gql`
               id
               name
               url
+              languages(orderBy: { direction: ASC, field: SIZE }, last: 1) {
+                edges {
+                  node {
+                    color
+                    name
+                  }
+                }
+              }
             }
           }
         }
