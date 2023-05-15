@@ -1,5 +1,6 @@
 .profile_wrapper {
-  width: 26%;
+  grid-area: profile;
+  // width: 26%;
   /* background-color: gray; */
   display: flex;
   flex-direction: column;

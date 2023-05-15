@@ -1,5 +1,5 @@
 .main_wrapper {
-  width: 67%;
+  grid-area: main;
   /* background-color: aliceblue; */
   padding-top: 20px;
   padding-left: 50px;
