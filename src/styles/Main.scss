@@ -7,22 +7,19 @@
   border-radius: 0px;
   box-shadow: inset 3px 3px 5px #080a0d, inset -3px -3px 5px #121821;
 }
-
 .pinned {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 15px;
 }
-
 .pinned_items {
   border: 0.5px solid #3f3f3f;
   width: 48%;
   height: 85px;
   border-radius: 10px;
 }
-
 .pinned_items > i {
   font-size: 15px;
   font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
-}/*# sourceMappingURL=Main.css.map */
+}

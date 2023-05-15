@@ -7,30 +7,25 @@
   gap: 20px;
   padding-top: 40px;
 }
-
 .avi {
   height: 42%;
   width: 80%;
 }
-
 .avi_img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
 }
-
 .name {
   display: flex;
   flex-direction: column;
   align-items: center;
   line-height: 1;
 }
-
 .full_name {
   font-size: xx-large;
   font-weight: bold;
 }
-
 .user_name {
   font-size: large;
 }
@@ -49,12 +44,10 @@
   align-items: center;
   gap: 5px;
 }
-
 .follow > .material-symbols-outlined {
   font-size: 20px;
 }
-
 .follower {
   border-right: 1px solid #ddd;
   padding-right: 5px;
-}/*# sourceMappingURL=Profile.css.map */
+}
