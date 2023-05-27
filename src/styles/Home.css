@@ -1,6 +1,4 @@
 .home_wrapper {
   height: 100%;
   width: 100%;
-  display: grid;
-  grid-template-areas: "header header header" "profile main main" "footer footer footer";
 }/*# sourceMappingURL=Home.css.map */

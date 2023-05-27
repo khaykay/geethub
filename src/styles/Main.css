@@ -1,24 +1,24 @@
 .main_wrapper {
-  grid-area: main;
-  /* background-color: aliceblue; */
-  padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-  border-radius: 0px;
-  box-shadow: inset 3px 3px 5px #080a0d, inset -3px -3px 5px #121821;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+  padding: 0 32px;
 }
 
 .pinned {
   display: flex;
   flex-wrap: wrap;
+  max-height: 330px;
   justify-content: space-between;
   row-gap: 15px;
+  background-color: aqua;
 }
 
 .pinned_items {
   border: 0.5px solid #3f3f3f;
-  width: 48%;
-  height: 85px;
+  width: 49.9%;
+  height: 89px;
   border-radius: 10px;
 }
 

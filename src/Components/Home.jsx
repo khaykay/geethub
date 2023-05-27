@@ -9,8 +9,9 @@ const Home = ({ data }) => {
     <>
       <div className="home_wrapper">
         <Navbar />
+        {/* <div className="body"></div> */}
         <Main data={data} />
-        <Profile data={data} />
+        {/* <Profile data={data} /> */}
       </div>
     </>
   );
