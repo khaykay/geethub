@@ -1,9 +1,17 @@
 .main_wrapper {
+  // background-color: aliceblue;
+
   height: 100%;
-  display: flex;
-  justify-content: space-between;
-  background-color: aliceblue;
+}
+
+.layout_wrapper {
   padding: 0 32px;
+  // height: 100%;
+}
+.layout {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 296px auto;
 }
 .overwiew {
 }
@@ -13,13 +21,17 @@
   // height: 242px;
   max-height: 330px;
   justify-content: space-between;
-  row-gap: 15px;
   background-color: aqua;
+}
+.pinned_items_wrapper {
+  width: 49.9%;
+  height: 89px;
+  padding: 0 8px;
+  margin-bottom: 16px;
 }
 .pinned_items {
   border: 0.5px solid #3f3f3f;
-  width: 49.9%;
-  height: 89px;
+  height: 100%;
   border-radius: 10px;
 }
 .pinned_items > i {

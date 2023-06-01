@@ -1,6 +1,6 @@
 .Nav_wrapper {
   height: 64px;
-  background-color: rgb(22, 27, 34);
+  background-color: #161b22;
   display: flex;
   align-items: center;
   padding: 0 32px;
@@ -9,24 +9,4 @@
 .github_logo {
   height: 35px;
   width: 35px;
-}
-.nav_icon {
-  height: 50%;
-  display: flex;
-  gap: 20px;
-}
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 48;
-  font-size: 30px;
-  color: #aaa;
-}
-.material-symbols-rounded {
-  font-variation-settings: "FILL" 0, "wght" 350, "GRAD" 0, "opsz" 48;
-  font-size: 30px;
-  color: #aaa;
-}
-.material-symbols-outlined:hover,
-.material-symbols-rounded:hover {
-  color: #eee;
-  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 48;
 }
