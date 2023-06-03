@@ -18,6 +18,7 @@
 
 .pinned_title {
   margin-bottom: 8px;
+  padding: 0 0 0 8px;
 }
 
 .pinned_title > h2 {
@@ -31,7 +32,6 @@
   flex-wrap: wrap;
   max-height: 330px;
   justify-content: space-between;
-  background-color: aqua;
 }
 
 .pinned_items_wrapper {

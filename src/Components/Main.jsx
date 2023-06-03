@@ -50,6 +50,12 @@ const Main = ({ data }) => {
                   })}
                 </div>
               </div>
+              <div className="">
+                <img
+                  src="https://ghchart.rshah.org/khaykay"
+                  alt="Name Your Github chart"
+                ></img>
+              </div>
             </div>
           </div>
         </div>
