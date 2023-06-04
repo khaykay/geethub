@@ -50,11 +50,16 @@ const Main = ({ data }) => {
                   })}
                 </div>
               </div>
-              <div className="">
-                <img
-                  src="https://ghchart.rshah.org/khaykay"
-                  alt="Name Your Github chart"
-                ></img>
+              <div className="contribution_wrapper">
+                <div className="contribution">
+                  <div className="contribution_title_bar"></div>
+                  <div className="contribution_table">
+                    <img
+                      src="https://ghchart.rshah.org/khayhay"
+                      alt="Name Your Github chart"
+                    ></img>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
