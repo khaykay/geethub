@@ -52,12 +52,29 @@ const Main = ({ data }) => {
               </div>
               <div className="contribution_wrapper">
                 <div className="contribution">
-                  <div className="contribution_title_bar"></div>
-                  <div className="contribution_table">
-                    <img
-                      src="https://ghchart.rshah.org/khayhay"
-                      alt="Name Your Github chart"
-                    ></img>
+                  <div className="contribution_title_bar">
+                    <h2 className="contribution_title">Lorem, ipsum dolor.</h2>
+                  </div>
+                  <div className="contribution_table_wrapper">
+                    <div className="contribution_table">
+                      <img
+                        src="https://ghchart.rshah.org/khaykay"
+                        alt="Name Your Github chart"
+                      ></img>
+                      <div className="contribution_key_wrapper">
+                        <div className="contribution_key">
+                          <div className="float_left">
+                            <a
+                              href="https://docs.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile"
+                              target="_blank"
+                            >
+                              Learn how we count contributions
+                            </a>
+                          </div>
+                          <div className="float_right"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
