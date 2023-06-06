@@ -78,6 +78,7 @@ const Main = ({ data }) => {
                   </div>
                 </div>
               </div>
+              <div className="contribution_activity"></div>
             </div>
           </div>
         </div>
