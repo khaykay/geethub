@@ -1,85 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Main.css";
 import Profile from "./Profile";
 import Bar from "./Bar";
+import Overview from "./Overview";
 
 const Main = ({ data }) => {
   const { user } = data;
   const pinnedItems = user.pinnedItems.edges.map(({ node }) => node);
   console.log(pinnedItems);
+  const [activeState, setActiveState] = useState("overview");
+
   return (
     <>
       <div className="main_wrapper">
-        <Bar />
+        <Bar setActiveState={setActiveState} />
         <div className="layout_wrapper">
           <div className="layout">
             <Profile data={data} />
-            <div className="overview">
-              <div className="pinned_wrapper">
-                <div className="pinned_title_bar">
-                  <div className="pinned_title">
-                    <h2>Pinned</h2>
-                  </div>
-                </div>
-                <div className="pinned">
-                  {pinnedItems.map((items) => {
-                    const style = {
-                      color: items.languages.edges[0].node.color,
-                    };
-                    return (
-                      <div className="pinned_items_wrapper" key={items.id}>
-                        <div className="pinned_items">
-                          <div className="pinned_items_title">
-                            <i class="material-symbols-outlined">
-                              collections_bookmark
-                            </i>
-                            <a href={items.url}>{items.name}</a>
-                          </div>
-                          <div className="pinned_items_tag">
-                            <span
-                              className="pinned_items_tag_color"
-                              style={{ backgroundColor: style.color }}
-                            ></span>
-                            <span className="pinned_items_tag_title">
-                              {items.languages.edges[0].node.name}
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-              <div className="contribution_wrapper">
-                <div className="contribution">
-                  <div className="contribution_title_bar">
-                    <h2 className="contribution_title">Lorem, ipsum dolor.</h2>
-                  </div>
-                  <div className="contribution_table_wrapper">
-                    <div className="contribution_table">
-                      <img
-                        src="https://ghchart.rshah.org/khaykay"
-                        alt="Name Your Github chart"
-                      ></img>
-                      <div className="contribution_key_wrapper">
-                        <div className="contribution_key">
-                          <div className="float_left">
-                            <a
-                              href="https://docs.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile"
-                              target="_blank"
-                            >
-                              Learn how we count contributions
-                            </a>
-                          </div>
-                          <div className="float_right"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="contribution_activity"></div>
-            </div>
+            {activeState === "overview" && (
+              <Overview pinnedItems={pinnedItems} />
+            )}
+            {activeState === "repository" && <div className="">e no work</div>}
           </div>
         </div>
       </div>

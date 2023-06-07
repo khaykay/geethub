@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Bar.css";
 
-const Bar = () => {
+const Bar = ({ setActiveState }) => {
   return (
     <div className="bar_wrapper">
       <div className=""></div>
@@ -9,11 +9,25 @@ const Bar = () => {
         <div className="nav_icon">
           <div className="overview_logo logo">
             <i class="material-symbols-outlined">import_contacts</i>
-            <span className="logo_title">Overview</span>
+            <span
+              className="logo_title"
+              onClick={() => {
+                setActiveState("overview");
+              }}
+            >
+              Overview
+            </span>
           </div>
           <div className="repo_logo logo">
             <i class="material-symbols-outlined">collections_bookmark</i>
-            <span className="logo_title">Repositories</span>
+            <span
+              className="logo_title"
+              onClick={() => {
+                setActiveState("repository");
+              }}
+            >
+              Repositories
+            </span>
           </div>
           <div className="project_logo logo">
             <i class="material-symbols-outlined">dashboard</i>
