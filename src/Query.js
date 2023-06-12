@@ -12,14 +12,18 @@ export const GET_REPOSITORY = gql`
         totalCount
       }
       name
-      repositories(first: 10) {
-        totalCount
-        edges {
-          node {
-            id
-            name
-            url
-            updatedAt
+      repositories(first: 20, orderBy: { field: CREATED_AT, direction: DESC }) {
+        nodes {
+          id
+          name
+          updatedAt
+          url
+          languages(last: 1, orderBy: { field: SIZE, direction: ASC }) {
+            nodes {
+              color
+              name
+              id
+            }
           }
         }
       }

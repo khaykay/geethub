@@ -7,39 +7,50 @@ const Bar = ({ setActiveState }) => {
       <div className=""></div>
       <div className="bar">
         <div className="nav_icon">
-          <div className="overview_logo logo">
-            <i class="material-symbols-outlined">import_contacts</i>
-            <span
-              className="logo_title"
-              onClick={() => {
-                setActiveState("overview");
-              }}
-            >
-              Overview
-            </span>
+          <div className="overview_logo logo_wrapper">
+            <div className="logo">
+              <i class="material-symbols-outlined">import_contacts</i>
+              <span
+                className="logo_title"
+                onClick={() => {
+                  setActiveState("overview");
+                  console.log("clicked overview");
+                }}
+              >
+                Overview
+              </span>
+            </div>
           </div>
-          <div className="repo_logo logo">
-            <i class="material-symbols-outlined">collections_bookmark</i>
-            <span
-              className="logo_title"
-              onClick={() => {
-                setActiveState("repository");
-              }}
-            >
-              Repositories
-            </span>
+          <div className="repo_logo logo_wrapper">
+            <div className="logo">
+              <i class="material-symbols-outlined">collections_bookmark</i>
+              <span
+                className="logo_title"
+                onClick={() => {
+                  setActiveState("repository");
+                }}
+              >
+                Repositories
+              </span>
+            </div>
           </div>
-          <div className="project_logo logo">
-            <i class="material-symbols-outlined">dashboard</i>
-            <span className="logo_title">Projects</span>
+          <div className="project_logo logo_wrapper">
+            <div className="logo">
+              <i class="material-symbols-outlined">dashboard</i>
+              <span className="logo_title">Projects</span>{" "}
+            </div>
           </div>
-          <div className="packages_logo logo">
-            <i class="material-symbols-outlined">inventory_2</i>
-            <span className="logo_title">Packages</span>
+          <div className="packages_logo logo_wrapper">
+            <div className="logo">
+              <i class="material-symbols-outlined">inventory_2</i>
+              <span className="logo_title">Packages</span>{" "}
+            </div>
           </div>
-          <div className="stars_logo logo">
-            <i class="material-symbols-rounded">star</i>
-            <span className="logo_title">Stars</span>
+          <div className="stars_logo logo_wrapper">
+            <div className="logo">
+              <i class="material-symbols-rounded">star</i>
+              <span className="logo_title">Stars</span>
+            </div>
           </div>
         </div>
       </div>
