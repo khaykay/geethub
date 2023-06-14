@@ -1,1 +1,1 @@
-{"version":3,"sources":["Navbar.scss","Navbar.css"],"names":[],"mappings":"AAAA;EACE,YAAA;EACA,yBAAA;EACA,aAAA;EACA,mBAAA;EACA,eAAA;EACA,SAAA;ACCF;;ADCA;EACE,YAAA;EACA,WAAA;ACEF","file":"Navbar.css"}
+{"version":3,"sources":["Navbar.scss","_variables.scss","Navbar.css"],"names":[],"mappings":"AACA;EACE,YAAA;EACA,iCCCe;EDAf,aAAA;EACA,mBAAA;EACA,eAAA;EACA,SAAA;AEAF;;AFEA;EACE,YAAA;EACA,WAAA;AECF","file":"Navbar.css"}

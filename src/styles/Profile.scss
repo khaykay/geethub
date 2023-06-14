@@ -1,3 +1,4 @@
+@use "variables";
 .profile_wrapper {
   display: flex;
   flex-direction: column;
@@ -9,7 +10,7 @@
 .avi {
   height: 296px;
   width: 296px;
-  border: 1px solid #30363d;
+  border: 1px solid variables.$border-color;
   border-radius: 50%;
 }
 .avi_img {
@@ -35,7 +36,7 @@
   width: 150px;
   height: 40px;
   border-radius: 20px;
-  background-color: #21262d;
+  background-color: variables.$btn-color;
   text-align: center;
   padding: 10px 0;
 }

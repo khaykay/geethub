@@ -1,3 +1,4 @@
+@use "variables";
 .overview {
 }
 .pinned_wrapper {
@@ -25,7 +26,7 @@ h2 {
   margin-bottom: 16px;
 }
 .pinned_items {
-  border: 1px solid rgb(48, 54, 61);
+  border: 1px solid variables.$border-color;
   height: 100%;
   border-radius: 6px;
   display: flex;
@@ -33,9 +34,11 @@ h2 {
   justify-content: space-between;
   padding: 16px;
 }
-.pinned_items > i {
-  font-size: 15px;
-  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+.pinned_items {
+  i {
+    font-size: 15px;
+    font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
+  }
 }
 .pinned_items_title {
   display: flex;
@@ -44,10 +47,12 @@ h2 {
 a {
   text-decoration: none;
 }
-.pinned_items_title > a {
-  color: #2f81f7;
-  font-size: 14px;
-  font-weight: 600;
+.pinned_items_title {
+  a {
+    color: variables.$text-color-blue;
+    font-size: 14px;
+    font-weight: 600;
+  }
 }
 .pinned_items_tag_color {
   height: 12px;
@@ -58,7 +63,7 @@ a {
 }
 .pinned_items_tag_title {
   font-size: 12px;
-  color: #7d8590;
+  color: variables.$text-color-gray;
 }
 
 //contribution
@@ -73,21 +78,25 @@ a {
   margin-bottom: 8px;
 }
 .contribution_table_wrapper {
-  border: 1px solid rgb(48, 54, 61);
+  border: 1px solid variables.$border-color;
   padding: 8px 0;
   border-radius: 6px 6px 0 0;
 }
 .contribution_table {
   padding: 4px 26px;
 }
-.contribution_table > img {
-  width: 100%;
+.contribution_table {
+  img {
+    width: 100%;
+  }
 }
 .contribution_key {
   padding: 4px 32px;
   font-size: 12px;
 }
-.float_left > a {
-  color: #7d8590;
-  font-size: 12px;
+.float_left {
+  a {
+    color: variables.$text-color-gray;
+    font-size: 12px;
+  }
 }

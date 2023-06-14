@@ -1,6 +1,22 @@
+.material-symbols-rounded, .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 48;
+  font-size: 17px;
+  color: rgb(125, 133, 144);
+  margin-right: 8px;
+}
+.material-symbols-rounded:hover, .material-symbols-outlined:hover {
+  color: #eee;
+  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 48;
+}
+
+.logo, .logo_wrapper, .nav_icon {
+  display: flex;
+  align-items: center;
+}
+
 .bar_wrapper {
   height: 49px;
-  border-bottom: 0.5px solid #30363d;
+  border-bottom: 0.5px solid rgb(48, 54, 61);
   margin-top: 24px;
   padding: 0 32px;
   display: grid;
@@ -13,50 +29,24 @@
 }
 
 .nav_icon {
-  display: flex;
   height: 100%;
-  align-items: center;
   gap: 8px;
 }
 
 .logo_wrapper {
   height: 100%;
-  display: flex;
-  align-items: center;
 }
 
 .logo {
   padding: 0 8px;
   line-height: 30px;
-  display: flex;
-  align-items: center;
 }
-
 .logo:hover {
   background-color: rgba(48, 54, 61, 0.5);
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .logo_title {
   margin-right: 8px;
-}
-
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 48;
-  font-size: 17px;
-  color: rgb(125, 133, 144);
-  margin-right: 8px;
-}
-
-.material-symbols-rounded {
-  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 48;
-  font-size: 17px;
-  color: rgb(125, 133, 144);
-  margin-right: 8px;
-}
-
-.material-symbols-outlined:hover,
-.material-symbols-rounded:hover {
-  color: #eee;
-  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 48;
 }/*# sourceMappingURL=Bar.css.map */

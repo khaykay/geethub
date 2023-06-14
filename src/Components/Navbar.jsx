@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
       <div className="Nav_wrapper">
-        <div className="logo">
+        <div className="github_logo_wrapper">
           <img className="github_logo" src={githublogo} alt="ReactImage" />
         </div>
       </div>

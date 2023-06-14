@@ -10,7 +10,7 @@
 .avi {
   height: 296px;
   width: 296px;
-  border: 1px solid #30363d;
+  border: 1px solid rgb(48, 54, 61);
   border-radius: 50%;
 }
 
@@ -40,7 +40,7 @@
   width: 150px;
   height: 40px;
   border-radius: 20px;
-  background-color: #21262d;
+  background-color: rgb(33, 38, 45);
   text-align: center;
   padding: 10px 0;
 }
