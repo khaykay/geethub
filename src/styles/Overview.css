@@ -1,3 +1,9 @@
+.pinned_items_tag,
+.tag, .pinned_items_title {
+  display: flex;
+  align-items: center;
+}
+
 .pinned_wrapper {
   margin-top: 24px;
 }
@@ -42,11 +48,6 @@ h2 {
   font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 48;
 }
 
-.pinned_items_title {
-  display: flex;
-  align-items: center;
-}
-
 a {
   text-decoration: none;
 }
@@ -57,7 +58,8 @@ a {
   font-weight: 600;
 }
 
-.pinned_items_tag_color {
+.pinned_items_tag_color,
+.tag_color {
   height: 12px;
   width: 12px;
   border-radius: 50%;
@@ -65,7 +67,8 @@ a {
   margin-right: 3px;
 }
 
-.pinned_items_tag_title {
+.pinned_items_tag_title,
+.tag_title {
   font-size: 12px;
   color: rgb(125, 133, 144);
 }

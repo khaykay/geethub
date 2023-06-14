@@ -14,7 +14,6 @@ const Bar = ({ setActiveState }) => {
                 className="logo_title"
                 onClick={() => {
                   setActiveState("overview");
-                  console.log("clicked overview");
                 }}
               >
                 Overview

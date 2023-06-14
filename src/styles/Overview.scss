@@ -1,4 +1,8 @@
 @use "variables";
+%flex-align {
+  display: flex;
+  align-items: center;
+}
 .overview {
 }
 .pinned_wrapper {
@@ -41,8 +45,7 @@ h2 {
   }
 }
 .pinned_items_title {
-  display: flex;
-  align-items: center;
+  @extend %flex-align;
 }
 a {
   text-decoration: none;
@@ -54,14 +57,20 @@ a {
     font-weight: 600;
   }
 }
-.pinned_items_tag_color {
+.pinned_items_tag,
+.tag {
+  @extend %flex-align;
+}
+.pinned_items_tag_color,
+.tag_color {
   height: 12px;
   width: 12px;
   border-radius: 50%;
   display: inline-block;
   margin-right: 3px;
 }
-.pinned_items_tag_title {
+.pinned_items_tag_title,
+.tag_title {
   font-size: 12px;
   color: variables.$text-color-gray;
 }

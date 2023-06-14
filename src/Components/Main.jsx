@@ -9,7 +9,9 @@ const Main = ({ data }) => {
   const { user } = data;
   const pinnedItems = user.pinnedItems.edges.map(({ node }) => node);
   const repository = user.repositories.nodes;
+  // console.log(pinnedItems);
   console.log(repository);
+  // console.log(user);
   const [activeState, setActiveState] = useState("overview");
 
   return (

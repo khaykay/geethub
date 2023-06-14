@@ -13,7 +13,7 @@ const Overview = ({ pinnedItems }) => {
         <div className="pinned">
           {pinnedItems.map((items) => {
             const style = {
-              color: items.languages.edges[0].node.color,
+              color: items.languages.edges[0]?.node.color,
             };
             return (
               <div className="pinned_items_wrapper" key={items.id}>
@@ -24,12 +24,12 @@ const Overview = ({ pinnedItems }) => {
                     </i>
                     <a href={items.url}>{items.name}</a>
                   </div>
-                  <div className="pinned_items_tag">
+                  <div className="pinned_items_tag tag">
                     <span
-                      className="pinned_items_tag_color"
+                      className="pinned_items_tag_color tag_color"
                       style={{ backgroundColor: style.color }}
                     ></span>
-                    <span className="pinned_items_tag_title">
+                    <span className="pinned_items_tag_title tag_title">
                       {items.languages.edges[0].node.name}
                     </span>
                   </div>

@@ -25,6 +25,7 @@ export const GET_REPOSITORY = gql`
               id
             }
           }
+          isPrivate
         }
       }
       pinnedItems(first: 3) {
@@ -42,6 +43,7 @@ export const GET_REPOSITORY = gql`
                   }
                 }
               }
+              isPrivate
             }
           }
         }

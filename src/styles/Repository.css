@@ -1,10 +1,11 @@
 .repositories {
   padding: 0 0 0 8px;
+  line-height: 21px;
 }
 
 .repositories_search_bar_wrapper {
-  line-height: 21px;
   padding: 16px 0;
+  border-bottom: 0.5px solid rgb(48, 54, 61);
 }
 
 .repositories_search_bar {
@@ -14,7 +15,7 @@
   height: 100%;
 }
 .repositories_search_bar input {
-  width: 439px;
+  width: 440px;
   line-height: 20px;
   background-color: rgb(13, 17, 23);
   border: 1px solid rgb(48, 54, 61);
@@ -35,4 +36,18 @@
 .repositories_search_bar input:focus {
   outline: none;
   border: 1.5px solid rgb(47, 129, 247);
+}
+
+.repository_wrapper {
+  padding: 24px 0;
+  border-bottom: 0.5px solid rgb(48, 54, 61);
+}
+
+.repository .repo_left {
+  width: 74.9999%;
+  margin-top: 8px;
+}
+
+.repo_title h3 {
+  color: rgb(47, 129, 247);
 }/*# sourceMappingURL=Repository.css.map */
