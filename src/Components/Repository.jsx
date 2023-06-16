@@ -28,7 +28,6 @@ const Repository = ({ repository }) => {
             };
             const event = new Date(items.updatedAt);
             const newEvent = event.toLocaleDateString(undefined, options);
-            console.log(newEvent);
 
             return (
               <div className="repository_wrapper " key={items.id}>
@@ -40,9 +39,9 @@ const Repository = ({ repository }) => {
                       </span>
                       <span className="repo_label tag_title">
                         {items.isPrivate == false ? (
-                          <span>public</span>
+                          <span>Public</span>
                         ) : (
-                          <span>private</span>
+                          <span>Private</span>
                         )}
                       </span>
                     </div>
@@ -54,9 +53,9 @@ const Repository = ({ repository }) => {
                       <span className="repo_tag_title tag_title">
                         {items.languages.nodes[0]?.name}
                       </span>
+
                       <span className="repo_update tag_title">
-                        {" "}
-                        updated on {newEvent}
+                        Updated on {newEvent}
                       </span>
                     </div>
                   </div>

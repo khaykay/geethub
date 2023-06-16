@@ -1,3 +1,8 @@
+.repository .repo_left .repo_name {
+  display: flex;
+  align-items: center;
+}
+
 .repositories {
   padding: 0 0 0 8px;
   line-height: 21px;
@@ -45,9 +50,30 @@
 
 .repository .repo_left {
   width: 74.9999%;
-  margin-top: 8px;
+}
+.repository .repo_left .repo_name {
+  gap: 10px;
+  margin-bottom: 4px;
 }
 
 .repo_title h3 {
   color: rgb(47, 129, 247);
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.repo_label {
+  padding: 0 7px;
+  border: 1px solid rgb(48, 54, 61);
+  border-radius: 24px;
+  line-height: 18px;
+}
+
+.repo_tag {
+  margin-top: 8px;
+  line-height: 30px;
+}
+
+.repo_update {
+  margin-left: 18px;
 }/*# sourceMappingURL=Repository.css.map */
