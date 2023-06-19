@@ -23,6 +23,13 @@ const Overview = ({ pinnedItems }) => {
                       collections_bookmark
                     </i>
                     <a href={items.url}>{items.name}</a>
+                    <span className="repo_label tag_title">
+                      {items.isPrivate == false ? (
+                        <span>Public</span>
+                      ) : (
+                        <span>Private</span>
+                      )}
+                    </span>
                   </div>
                   <div className="pinned_items_tag tag">
                     <span
