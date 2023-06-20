@@ -22,6 +22,7 @@ const Overview = ({ pinnedItems }) => {
                     <i class="material-symbols-outlined">
                       collections_bookmark
                     </i>
+
                     <a href={items.url}>{items.name}</a>
                     <span className="repo_label tag_title">
                       {items.isPrivate == false ? (
