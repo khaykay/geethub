@@ -55,7 +55,7 @@ const Overview = ({ pinnedItems }) => {
           <div className="contribution_table_wrapper">
             <div className="contribution_table">
               <img
-                src="https://ghchart.rshah.org/0A3069/khaykay"
+                src="https://ghchart.rshah.org/khaykay"
                 alt="Name Your Github chart"
               ></img>
               <div className="contribution_key_wrapper">
