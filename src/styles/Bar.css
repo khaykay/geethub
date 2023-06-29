@@ -49,4 +49,36 @@
 
 .logo_title {
   margin-right: 8px;
+}
+
+@media (max-width: 820px) {
+  .bar_wrapper {
+    grid-template-columns: 256px auto;
+    outline: 1px solid red;
+    gap: 16px;
+  }
+  .logo {
+    padding: 0;
+  }
+}
+@media (max-width: 544px) {
+  .bar_wrapper {
+    background-color: whitesmoke;
+    display: flex;
+    margin-top: 0;
+    padding: 0 16px;
+    gap: 0;
+    height: 40px;
+  }
+  .bar {
+    padding: 0;
+    overflow: hidden;
+  }
+  .logo {
+    font-size: small;
+  }
+  .logo i {
+    margin-right: 4px;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Bar.css.map */

@@ -10,4 +10,16 @@
   display: grid;
   gap: 24px;
   grid-template-columns: 296px auto;
+}
+
+@media (max-width: 544px) {
+  .layout {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .layout_wrapper {
+    padding: 0 16px;
+  }
 }/*# sourceMappingURL=Main.css.map */

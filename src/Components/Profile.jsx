@@ -5,12 +5,14 @@ const Profile = ({ data }) => {
   return (
     <>
       <div className="profile_wrapper">
-        <div className="avi">
-          <img src={data.user.avatarUrl} className="avi_img" />
-        </div>
-        <div className="name">
-          <span className="full_name">{data.user.name}</span>
-          <span className="user_name">@{data.user.login}</span>
+        <div className="profile">
+          <div className="avi">
+            <img src={data.user.avatarUrl} className="avi_img" />
+          </div>
+          <div className="name">
+            <span className="full_name">{data.user.name}</span>
+            <span className="user_name">@{data.user.login}</span>
+          </div>
         </div>
         <div className="btn">Edit Profile</div>
         <div className="follow">
