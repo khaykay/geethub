@@ -63,7 +63,6 @@
   .avi {
     height: 75px;
     width: 75px;
-    border: 1px solid rgb(48, 54, 61);
     border-radius: 50%;
   }
   .profile_wrapper {
@@ -74,7 +73,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: bisque;
     width: 100%;
   }
   .full_name {

@@ -5,9 +5,20 @@
   display: flex;
   align-items: center;
   padding: 0 32px;
-  gap: 30px;
 }
 .github_logo {
   height: 35px;
   width: 35px;
+}
+
+//Media Queries
+@media (max-width: 544px) {
+  .Nav_wrapper {
+    padding: 0 16px;
+    height: 48px;
+  }
+  .github_logo {
+    height: 25px;
+    width: 25px;
+  }
 }

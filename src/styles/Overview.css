@@ -108,4 +108,16 @@ a {
 .float_left a {
   color: rgb(125, 133, 144);
   font-size: 12px;
+}
+
+@media (max-width: 544px) {
+  .pinned_items_wrapper {
+    width: 100%;
+  }
+  .contribution_table {
+    padding: 0 8px;
+  }
+  .contribution_key {
+    padding: 0 8px;
+  }
 }/*# sourceMappingURL=Overview.css.map */

@@ -74,3 +74,18 @@
 .repo_update {
   margin-left: 18px;
 }
+
+//media queries
+@media (max-width: 544px) {
+  .repositories_search_bar_wrapper {
+    input {
+      width: 100%;
+    }
+  }
+  .repo_tag {
+    line-height: normal;
+  }
+  .repositories {
+    padding: 0;
+  }
+}
