@@ -48,9 +48,6 @@
   border-bottom: 0.5px solid rgb(48, 54, 61);
 }
 
-.repository .repo_left {
-  width: 74.9999%;
-}
 .repository .repo_left .repo_name {
   gap: 10px;
   margin-bottom: 4px;

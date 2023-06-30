@@ -65,9 +65,14 @@
     grid-template-columns: 256px auto;
     // outline: 1px solid red;
     gap: 16px;
+    padding: 0 24px;
+  }
+  .bar {
+    padding: 0 8px;
   }
   .logo {
-    //padding: 0;
+    padding: 0;
+    font-size: small;
   }
 }
 
@@ -84,7 +89,7 @@
     overflow: hidden;
   }
   .logo {
-    // font-size: small;
+    padding: 0 8px;
 
     i {
       margin-right: 4px;

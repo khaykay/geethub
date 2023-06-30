@@ -15,6 +15,17 @@
 }
 
 //media query
+@media (max-width: 820px) {
+  .layout {
+    grid-template-columns: 256px auto;
+    // outline: 1px solid red;
+    gap: 16px;
+  }
+  .layout_wrapper {
+    padding: 0 24px;
+  }
+}
+
 @media (max-width: 544px) {
   .layout {
     //background-color: whitesmoke;

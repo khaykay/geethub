@@ -19,11 +19,13 @@ const Overview = ({ pinnedItems }) => {
               <div className="pinned_items_wrapper" key={items.id}>
                 <div className="pinned_items">
                   <div className="pinned_items_title">
-                    <i class="material-symbols-outlined">
-                      collections_bookmark
-                    </i>
+                    <span className="pinned_items_title_top">
+                      <i class="material-symbols-outlined">
+                        collections_bookmark
+                      </i>
 
-                    <a href={items.url}>{items.name}</a>
+                      <a href={items.url}>{items.name}</a>
+                    </span>
                     <span className="repo_label tag_title">
                       {items.isPrivate == false ? (
                         <span>Public</span>
